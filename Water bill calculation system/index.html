@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Bill Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Water Bill Calculator</h1>
+    <form id="waterBillForm">
+      <label for="usage">Water Usage (cubic meters):</label>
+      <input type="number" id="usage" placeholder="Enter water usage" required>
+      
+      <label for="rate">Rate (per cubic meter in THB):</label>
+      <input type="number" id="rate" placeholder="Enter rate per cubic meter" required>
+      
+      <button type="button" id="calculateBtn">Calculate</button>
+    </form>
+    <div id="result">
+      <p><strong>Total Water Bill:</strong> <span id="totalBill">-</span> THB</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
